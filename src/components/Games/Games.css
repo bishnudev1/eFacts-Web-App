@@ -1,0 +1,92 @@
+/* BEGIN CARD DESIGN */
+::-webkit-scrollbar {
+  display: none;
+}
+
+.mainContainer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.hero {
+  display: inline-block;
+  position: relative;
+  width: 330px;
+  min-width: 330px;
+  height: 350px;
+  border-radius: 30px;
+  overflow:hidden;
+  /* box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3); */
+  box-shadow: 0 8px 29px -10px white;;
+  margin: 30px;
+}
+
+.hero-profile-img {
+  height: 70%;
+}
+
+
+.hero-description-bk {
+  background-image: linear-gradient(0deg , #3f5efb, #fc466b);
+  border-radius: 0px;
+  position: absolute;
+  top: 51%;
+  left: 0px;
+  height: 65%;
+  font-weight: 700;
+  width: 100%;
+  transform: skew(0deg, 0deg);
+}
+
+.second .hero-description-bk {
+  background-image: linear-gradient(-20deg , #bb7413, #e7d25c)
+}
+
+.hero-btn {
+  position: absolute;
+  color: #fff;
+  right: 115px;
+  bottom: 3%;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+}
+
+.hero-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero-date {
+  position: absolute;
+  color: #fff;
+  bottom: 13%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* END CARD DESIGN */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: black;
+  min-height: 100vh;
+}
+.btn i:before {
+  width: 14px;
+  height: 14px;
+  position: fixed;
+  color: #fff;
+  background: #0077B5;
+  padding: 10px;
+  border-radius: 50%;
+  top:5px;
+  right:5px;
+}
+
+
+@media (max-width: 998px) {
+  .mainContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+}
